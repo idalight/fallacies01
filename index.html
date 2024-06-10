@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fallacies 논리적 오류</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+	 <style type="text/css">
+	@font-face {
+    	font-family: 'Pretendard-Medium';
+    	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    	font-weight: 500;
+    	font-style: normal;}
+	@font-face {
+   	 font-family: 'Pretendard-Regular';
+   	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+   	 font-weight: 400;
+ 	   font-style: normal;
+ 	</style>
+	<script src="wow.js"></script>
+	<link rel="stylesheet" href="animate.css">
+  	<script>
+      new WOW().init();
+ 	</script>
+ 	</script>
+	<style>
+		// <uniquifier>: Use a unique and descriptive class name
+		// <weight>: Use a value from 100 to 900
+		.epilogue-<uniquifier> {
+		 font-family: "Epilogue", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: <weight>;
+		  font-style: normal;}
+		// <uniquifier>: Use a unique and descriptive class name
+		// <weight>: Use a value from 100 to 900
+		.noto-sans-kr-<uniquifier> {
+		  font-family: "Noto Sans KR", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: <weight>;
+		  font-style: normal;}
+		html{scroll-behavior: smoth;}
+		.wrap{width: 1100px; margin: auto; position: relative;}
+		p,h1,h2,ul {margin: 0px}
+		h1{font-family: "Epilogue"; font-weight: 400; font-size: 88px; line-height: 130%; text-align: center; padding: 270px 0px 20px 0px; color: #4857F6}
+		body{font-family: "Pretendard-Medium";  font-size: 19px; line-height: 160%; margin: 0}
+		h2 {font-family: "Pretendard-Medium"; font-size: 54px; line-height: 150%}
+		nav {padding: 14px 0px; 
+			background: linear-gradient(to top, rgba(238, 238, 238, 1), rgba(238, 238, 238, 0));
+			backdrop-filter: blur(3px);
+			position: fixed;
+			width: 100%;
+			top: 0;
+			left: 0;
+			z-index: 1000;
+			border-bottom: 1px solid #333; border-color: #4857F6; font-family: "Epilogue"; }
+		nav em{font-style: normal; margin: 0px 0px}
+		nav ul {display: inline-block; padding: 0;margin: 0; padding-inline-start: 0px;     margin-block-start: 0; margin-block-end: 0;}
+		nav a {color: #4857F6}
+		nav a:hover {color: #FF4C91; font-weight:600 }
+		nav ul.desktop {display: inline-block; list-style-type: none;}
+		nav ul.desktop li {display: inline-block; margin: 0 30px;}
+		nav ul.desktop li a {text-decoration: none;}
+		header p {text-align: center; font-size: 30px; font-weight: 600; line-height: 160%; padding-bottom: 230px; color: #FF4C91}
+		header{background-image: url("2.header2.gif");background-size: cover; background-repeat: repeat;}
+		footer {background-color: #FF4C91; color: white;}
+		footer h2 {font-family: "Epilogue"; font-size: 100px; padding-top: 80px; font-weight: 400}
+		footer p {font-size: 30px;line-height: 160%; padding-bottom: 180px}
+		.small_nav {margin: 0 30px;}
+		.S1 {background-image: url("8.bg2.png"); background-position: center; background-repeat: no-repeat;background-size: cover; }
+		.intro p{text-align: center; font-size: 28px; font-weight: 500; line-height: 160%; padding-bottom: 40px; color: white; position: relative;}
+		.intro em {font-style: normal; font-size: 20px; font-weight: 300; color: #B8BEFF}
+		#int1 {padding-top: 100px}
+		#int2 {padding-bottom: 220px}
+		.S2 {background-color: #FF468D; text-align: center; color: white;}
+		.S2 h2 {padding: 120px 0px 30px 0px}
+		.S2 p {padding: 0px 0px 120px 0px}
+		.S2 em {font-weight: 500; font-style: normal; text-decoration: underline;}
+		.S3 {background-color: #EEEEEE; text-align: center; color: black;}
+		.S3 h2 {padding: 90px 0px 30px 0px}
+		.S3 p {padding: 0px 0px 90px 0px}
+		.S4 {background-color: #252525; text-align: center; color: white; height: 1600px; overflow: hidden;}
+		.S4 h2 {padding: 110px 0px 0px 0px}
+		.S4 ul {text-align: center; display: flex; gap: 30px;justify-content: center;}
+		.S4 a { font-family: "Pretendard-Medium"; font-weight: 400; font-size: 18px; line-height: 160%; margin: 0;padding: 10px 20px; border-radius: 33px; background-color: #FF468D; color: white; position: absolute; top: 460px; left: 45%;text-decoration: none;}
+		#pp1 {position: absolute; top: 650px; right: 770px; animation: moveUpDown 1s infinite alternate ease-in-out; }
+		#pp2 {position: absolute; top: 600px; left: 350px; animation: moveUpDown 1.1s infinite alternate ease-in-out; }
+		#pp3 {position: absolute; top: 600px; left: 750px; animation: moveUpDown 1.4s infinite alternate ease-in-out; }
+		#pp4 {position: absolute; top: 1000px; left: 150px;animation: moveUpDown 1.2s infinite alternate ease-in-out; }
+		#pp5 {position: absolute; top: 1100px; left: 550px;animation: moveUpDown 0.8s infinite alternate ease-in-out; }
+		@keyframes moveUpDown {0% {
+                transform: translateY(0);}
+            100% {transform: translateY(-50px);}}
+        .fadein{animation: fade 2s forwards;}
+        .f2 {position: absolute; top: 80px; left: 65%; line-height: 220%}
+        .f2 ul { display: flex; gap: 60px; list-style-type: none;}
+        @keyframes fade{
+                from{opacity: 0; top: 200px}
+                to{opacity: 1; top: 0px}
+
+
+	</style>
+</head>
+<body>
+<nav>
+	<div>
+		<ul class="desktop">
+		<li><a><em>Fallacies</em></a></li>
+		<li class="small_nav"><a href="newpage.html" target="_blank">theory</a></li>
+		</ul>
+	</div>
+</nav>
+<header>
+	<div class="wrap">
+	<h1>Fallacies,<br>How to aim for someone<br>opponent's loopholes</h1>
+	<p>논리적 오류,<br>상대방의 허점을 조준하는 법</p>
+	</div>
+</header>
+<section class="S1">
+	<div class="wrap">
+		<div class="intro">
+			<p class="wow fadein" id="int1">“지금 제일 높은 산꼭대기는 안 추울까?”</p>
+			<p class="wow fadein">“햇볕을 제일 바로 옆에서 때려 박는데 그 곳이 제일 덥지 않을까.<br>추워 죽겠는데 왜 비행기에서 에어컨을 틀어주겠어?<br>미치도록 더우니까 틀어주는거지”</p>
+			<p class="wow fadein">“.......😡”</p>
+			<p id="int2"><em>from. 신서유기</em></p>
+		</div>
+	</div>
+</section>
+<section class="S2">
+	<div class="wrap">
+		<h2>분명 틀린 말인데,<br>왜 틀렸는지 모르겠어!</h2>
+		<p>이야기를 할 때 상대방의 말이 뭔가 이상하다는 걸 느꼈는데,<br>뭐가 이상한지 정확히 몰라 반박 못한 경험이 있나요?
+		<br><em>그것은 바로 논리적 오류를 간파하지 못했기 때문입니다!</em></p>
+	</div>
+</section>
+<section class="S3">
+	<div class="wrap">
+		<h2>이 시대 최고의 사냥감,<br>논리적 오류</h2>
+		<p>논리적 오류: 논리학 용어로, 논증을 구성하거나 추론을 진행하는 데 있어<br>타당하지 않은 방식을 사용하는 것</p>
+	</div>
+</section>
+<section class="S4">
+	<div class="wrap">
+	<h2>정보화 시대에서 ‘말빨’로<br>살아남기 위해서는<br>상대의 ‘논리적 오류’ 조준해야 합니다<br>지금부터 그 조준법을 알려줄게요!</h2>
+	<a href="newpage.html" target="_blank">알아보기</a>
+	<img src="3.pp1.svg" id="pp1"></a></li>
+	<img src="4.pp2.svg" id="pp2"></a></li>
+	<img src="5.pp3.svg" id="pp3"></a></li>
+	<img src="6.pp4.svg" id="pp4"></a></li>
+	<img src="7.pp5.svg" id="pp5"></a></li>
+	</div>
+</section>
+<footer>
+	<div class="wrap">
+	<h2>Fallacies</h2>
+	<a>논리적 오류,<br>상대방의 허점을 조준하는 법</p>
+	<div class="f2">
+		<ul>
+		<li><a>Fallacies<br>고객 서비스<br>자주 묻는 질문<br>고객지원센터</a></li>
+		<li><a>CONTACT<br>Lee Dahyeon<br>@i.da.light<br></a></li>
+		</ul>
+	</div>
+	</div>
+</footer>
+</body>
+</html>

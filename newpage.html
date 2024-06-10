@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fallacies theory 논리적 오류 이론</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+	<script src="wow.js"></script>
+	<link rel="stylesheet" href="animate.css">
+	<style type="text/css">
+	@font-face {
+    	font-family: 'Pretendard-Medium';
+    	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    	font-weight: 500;
+    	font-style: normal;}
+	@font-face {
+   	 font-family: 'Pretendard-Regular';
+   	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+   	 font-weight: 400;
+ 	   font-style: normal;
+ 	</style>
+  	<script>
+      new WOW().init();
+ 	</script>
+ 	</script>
+	<style>
+		// <uniquifier>: Use a unique and descriptive class name
+		// <weight>: Use a value from 100 to 900
+		.epilogue-<uniquifier> {
+		 font-family: "Epilogue", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: <weight>;
+		  font-style: normal;}
+		// <uniquifier>: Use a unique and descriptive class name
+		// <weight>: Use a value from 100 to 900
+		.noto-sans-kr-<uniquifier> {
+		  font-family: "Noto Sans KR", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: <weight>;
+		  font-style: normal;}
+		html{scroll-behavior: smoth; width: 6000px; background: #eeeeee}
+		.wrap{width: 1100px; margin: auto; position: relative;}
+		p,h1,h2,ul {margin: 0px}
+		body{font-family: "Noto Sans KR"; font-weight: 400; font-size: 19px; line-height: 160%; margin: 0}
+		nav {padding: 14px 0px; 
+			background: linear-gradient(to top, rgba(238, 238, 238, 1), rgba(238, 238, 238, 0));
+			backdrop-filter: blur(3px);
+			position: fixed;
+			width: 100%;
+			top: 0;
+			left: 0;
+			z-index: 1000;
+			border-bottom: 1px solid #333; border-color: #4857F6; font-family: "Epilogue";}
+		nav em {font-style: normal; margin: 0px 0px}
+		nav ul {display: inline-block; padding: 0;margin: 0; padding-inline-start: 0px;     margin-block-start: 0;     margin-block-end: 0;}
+		nav a {color: #4857F6}
+		nav a:hover {color: #FF4C91; font-weight:600 }
+		nav ul.desktop {display: inline-block; list-style-type: none;}
+		nav ul.desktop li {display: inline-block; margin: 0 30px;}
+		nav ul.desktop li a {text-decoration: none;}
+		.container {display: flex; flex-direction: row;}
+		.section {flex: 0 0 1200px; display: flex;}
+		.p1 img {padding: 0px 0px 500px 150px; }
+		.ani img{position: relative;}
+		.fadein{animation: fade 2s forwards;}
+		.img1, .img2, .img3 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.5s ease;}
+        .img2 {opacity: 0;}
+        .img3 {opacity: 0;z-index: 999}
+        #s1:hover .img1 {
+            opacity: 0;}
+        #s1:hover .img2 {
+            opacity: 1; animation: up 0.8s forwards;}
+        #s1:hover .img3 {opacity: 1; animation: up2 0.8s forwards;}
+		@keyframes fade{
+                from{top: -600px}
+                to{top: -300px}}
+        @keyframes up {
+            from {bottom: 0px;}
+            to {bottom: 60px;}}
+        @keyframes up2 {
+            from {bottom: 0px;}
+            to {bottom: 40px;}}
+		#pp1 {position: absolute; left: 130px; transition: opacity 0.5s ease;}
+		#pp2 {position: absolute; left: 120px}
+		#pp3 {position: absolute; left: 120px}
+		#pp4 {position: absolute; left: 150px}
+		#pp5 {position: absolute; left: 150px}
+		#m1 {position: absolute; top: 210px; left: 505px; overflow: }
+		#m2 {position: absolute; top: 280px; left: 420px}
+		#m3 {position: absolute; top: 280px; left: 480px}
+		#m4 {position: absolute; top: 280px; left: 540px}
+		#m5 {position: absolute; top: 280px; left: 710px}
+	</style>
+</head>
+<body>
+<nav>
+	<div>
+		<ul class="desktop">
+		<li><a href="index.html" target="_blank"><em>Fallacies</em></a></li>
+		<li class="small_nav"><a href="#bbb">theory</a></li>
+		</ul>
+	</div>
+</nav>
+<div class="container">
+<section class="section" id="s1">
+	<div class="img1">
+		<img src="9.p1.svg" id="pp1" class="wow fadein">
+	</div>
+	<div class="img2">
+		<img src="14.p1-2.svg" id="pp1" class="wow fadein">
+	</div>
+	<div class="img3">
+		<img src="19.m1.svg" id="m1" >
+	</div>
+</section>
+<section class="section" id="s1">
+	<div class="img1">
+		<img src="10.p2.svg" id="pp2" class="wow fadein">
+	</div>
+	<div class="img2">
+		<img src="15.p2-2.svg" id="pp2" class="wow fadein">
+	</div>
+	<div class="img3">
+		<img src="20.m2.svg" id="m2" >
+	</div>
+</section>
+<section class="section" id="s1">
+	<div class="img1">
+		<img src="11.p3.svg" id="pp3" class="wow fadein">
+	</div>
+		<div class="img2">
+		<img src="16.p3-2.svg" id="pp3" class="wow fadein">
+	</div>
+	<div class="img3">
+		<img src="21.m3.svg" id="m3">
+	</div>
+</section>
+<section class="section" id="s1">
+	<div class="img1">
+		<img src="12.p4.svg" id="pp4" class="wow fadein">
+	</div>
+	<div class="img2">
+		<img src="17.p4-2.svg" id="pp4" class="wow fadein">
+	</div>
+	<div class="img3">
+		<img src="22.m4.svg" id="m4">
+	</div>
+</section>
+<section class="section" id="s1">
+	<div class="img1">
+		<img src="13.p5.svg" id="pp5" class="wow fadein">
+	</div>
+	<div class="img2">
+		<img src="18.p5-2.svg" id="pp5" class="wow fadein">
+	</div>
+	<div class="img3">
+		<img src="23.m5.svg" id="m5">
+	</div>
+</section>
+</div>
+</body>
+</html>
